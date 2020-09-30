@@ -1,0 +1,17 @@
+# Note : these codes work correctly pnly on the train_test_splits models 
+
+
+# import thses scores
+
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import f1_score
+
+
+
+# write the following at the end of codes 
+
+
+print("Precision:", precision_score(y_test, y_pred, average='macro'))
+print("Recall:", recall_score(y_test, y_pred, average='macro'))
+print("F-1 :", f1_score(y_test, y_pred, average='macro'))
